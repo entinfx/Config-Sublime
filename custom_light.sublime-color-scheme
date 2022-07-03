@@ -1,0 +1,123 @@
+{
+    "name": "Custom Color Scheme",
+
+    "variables":
+    {
+        /* Colors */
+        "red0": "#eb1e40",
+        "orange0": "#b36410",
+        "orange1": "#593f05",
+        "orange2": "#c9714b",
+        "yellow1": "#ffe054",
+        "green0": "#3fd17e",
+        "green1": "#056647",
+        "green2": "#47e68b",
+        "green3": "#2da15f",
+        "blue0": "#9a86cf",
+        "blue1": "#5d64e3",
+        "blue2": "#837e9e",
+        "purple0": "#fc90f2",
+        "white0": "#f4f4f4",
+        "grey0": "#cacacc",
+
+        "current_line": "#f4f0f5",
+        "text_selection": "#f6e2fa",
+        "foreground": "#333",
+        "background": "#fcf8fd"
+    },
+
+    "globals":
+    {
+        "background": "var(background)",
+        "foreground": "var(foreground)",
+        "caret": "var(foreground)",
+        "line_highlight": "var(current_line)",
+
+        // Accents
+        "misspelling": "red",
+        "fold_marker": "var(purple0)",
+
+        // Diff
+        "line_diff_added": "var(green3)",
+        "line_diff_modified": "var(grey0)",
+        "line_diff_deleted": "var(red0)",
+
+        // Selection
+        "selection": "var(text_selection)",
+
+        // Find
+        "highlight": "var(green3)",
+        "find_highlight": "var(yellow1)",
+
+        // Brackets
+        "brackets_foreground": "var(foreground)",
+        "brackets_options": "underline",
+
+        // Tags
+        "tags_foreground": "var(foreground)",
+
+        // Gutter
+        "gutter_foreground": "var(blue2)"
+    },
+
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(green3)",
+            "font_style": "italic"
+        },
+
+        {
+            "name": "Entity",
+            "scope": "entity",
+            "foreground": "var(blue1)"
+        },
+
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "var(blue1)"
+        },
+
+        {
+            "name": "Constant",
+            "scope": "constant",
+            "foreground": "var(orange2)"
+        },
+
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(foreground)",
+            "font_style": "bold"
+        },
+
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(blue0)",
+            "font_style": "bold"
+        },
+
+        {
+            "name": "Markup",
+            "scope": "markup",
+            "foreground": "var(blue0)",
+        },
+
+        {
+            "name": "Markup Heading",
+            "scope": "markup.heading",
+            "foreground": "var(green0)",
+            "font_style": "bold",
+        },
+
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(blue0)",
+        }
+    ]
+}
